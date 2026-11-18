@@ -42,9 +42,10 @@ Parsed 10470 records from sample_traffic.log
 | File | What it is |
 | --- | --- |
 | `log_analyzer.py` | The whole tool: parse, database, SQL summary, anomaly detection, Excel export |
-| `sample_traffic.log` | 10,000+ sample traffic records (generated, includes 2 planted anomalies) |
 | `schema.sql` | MySQL schema + the summary queries |
 | `requirements.txt` | `openpyxl` for the Excel report |
+
+No sample log file is stored in the repo — run `python log_analyzer.py --generate` and it creates a 10,470-record sample log with 2 planted anomalies for you to find. Running `python log_analyzer.py` with no log file does this automatically.
 
 ## Skills used
 
